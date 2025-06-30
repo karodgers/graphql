@@ -21,7 +21,7 @@ A modern, visually appealing web dashboard for users to view and analyze their l
 ## Live Demo
 
 Test the dashboard live:  
-[https://karodgers-graphql.com](https://karodgers-graphql.com)  
+[https://graphql-grin.onrender.com](https://graphql-grin.onrender.com)  
 
 
 ---
