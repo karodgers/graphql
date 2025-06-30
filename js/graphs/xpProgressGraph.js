@@ -141,13 +141,6 @@ export function renderXPProgressGraph(container, xpTransactions, timePeriod = 'w
             <text x="${x}" y="${graphHeight - 10}" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">${point.label}</text>
           `;
         }).join('')}
-        
-        <!-- Current XP indicator -->
-        <g transform="translate(${graphWidth - 80}, 0)">
-          <rect x="0" y="0" width="70" height="30" fill="rgba(255,255,255,0.9)" rx="4" stroke="#ddd" stroke-width="1"/>
-          <text x="35" y="12" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="600" fill="#333">Total</text>
-          <text x="35" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#4facfe">${maxXP.toLocaleString()}</text>
-        </g>
       </g>
     </svg>
   `;
