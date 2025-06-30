@@ -2,27 +2,52 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Profile | GraphQL Profile App</title>
-  <link rel="stylesheet" href="../css/styles.css">
+    <title>GraphQL</title>
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
-<body>
-  <div class="container">
-    <header>
-      <h1>Your Profile</h1>
-      <button id="logout-btn">Logout</button>
-    </header>
-    <section id="user-info">
-      <!-- User info will be populated here -->
-    </section>
-    <section id="stats-graphs">
-      <h2>Statistics</h2>
-      <div id="graphs-container">
-        <!-- SVG graphs will be rendered here -->
+<body class="profile-body">
+  <div class="profile-container">
+        <!-- Header -->
+        <div class="profile-header">
+            <div class="profile-info-section">
+                <div class="profile-img" id="profile-img">U</div>
+                <div class="profile-info">
+                    <div id="profile-username">Username</div>
+                    <div id="profile-userid">ID: 00000</div>
+                </div>
+            </div>
+            <button id="logout-btn" class="logout-btn">Log out</button>
+        </div>
+
+
+        <!-- Main Dashboard -->
+        <div class="dashboard">
+            <!-- GraphQL Statistics Card -->
+            <div class="card property-card"></div>
+            <!-- XP Card (was metric-card) -->
+            <div class="card metric-card xp-card">
+                <div class="metric-title">Total XP</div>
+                <div style="font-size: 12px; color: #666; margin-bottom: 20px;">Your accumulated experience points</div>
+            </div>
+            <!-- Audits Done Card -->
+            <div class="card revenue-card"></div>
+            <!-- Audits Received Card -->
+            <div class="card audits-received-card"></div>
+            <!-- Campus Card -->
+            <div class="card campus-card">
+                <div class="metric-title">Campus Info</div>
+                <div style="font-size: 1.2rem; font-weight: 600; margin: 18px 0 8px 0; color: #667eea;" id="campus-name">Campus: --</div>
+                <div style="font-size: 1rem; color: #666;">Joined: <span id="joined-date">--</span></div>
+            </div>
+            <!-- Bottom Section: Recent Grades and Results -->
+            <div class="bottom-section">
+                <div class="card"></div>
+                <div class="card"></div>
+            </div>
       </div>
-    </section>
   </div>
-  <script type="module" src="../js/profile.js"></script>
+
+    <script type="module" src="../js/profile.js"></script>
 </body>
 </html> 
